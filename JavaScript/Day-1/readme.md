@@ -12,6 +12,8 @@
 </div>
 
 
+# Table of contents:
+
 #### Learnt some basic stuff about:
 	-		JavaScript Introduction.
 	-		JavaScript Variables.

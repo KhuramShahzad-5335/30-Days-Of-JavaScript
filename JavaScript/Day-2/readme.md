@@ -11,6 +11,8 @@
 
 
 
+# Table of contents:
+
 - [📔 Day 2](#-day-2)
 	- [Data Types](#data-types)
 		- [Primitive Data Types](#primitive-data-types)

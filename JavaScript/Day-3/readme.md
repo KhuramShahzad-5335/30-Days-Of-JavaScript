@@ -15,6 +15,7 @@
 </div>
 
 
+# Table of contents:
 - [📔 Day 3](#-day-3)
 	- [Booleans](#booleans)
 		- [Truthy values](#truthy-values)
