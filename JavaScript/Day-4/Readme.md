@@ -1,5 +1,17 @@
 
-![Thirty Days Of JavaScript](../images/banners/day_1_4.png)
+<div align="center">
+    <h1> 30 Days Of JavaScript  </h1> 
+    <sub>Author:
+        <p>   Rao Khuram Shahzad   </p>
+    </sub>
+    <br>
+    <h2>
+    DAY-3 
+    <br>
+     CONDITIONAL STATEMENTS 
+     </h2>
+   <p>--------------------------------</p>
+</div>
 
 - [📔 Day 4](#-day-4)
 	- [Conditionals](#conditionals)
