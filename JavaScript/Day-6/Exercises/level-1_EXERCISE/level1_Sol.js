@@ -248,7 +248,7 @@ console.log(arrayOfRandNum);
 
 
 
-//====================      13
+//====================      14
 //Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
 const uniqueRands = [];
@@ -268,6 +268,9 @@ console.log(uniqueRands)
 
 
 
+
+
+//============================      15
 //Develop a small script which generate a six characters random id:
 
 //---------5j2khz
