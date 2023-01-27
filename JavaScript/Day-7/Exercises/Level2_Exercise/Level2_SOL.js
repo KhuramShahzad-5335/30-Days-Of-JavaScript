@@ -127,6 +127,149 @@ const addItem = (item) => {
     arrAdd.push(item);
     return arrAdd;
 }
-arrAdd = addItem('khuram');
+carrAdd = addItem('khuram');
 console.log(addItem(5))
 console.log(addItem(55));   
+
+
+
+//======================        9.
+//Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item.
+let remArr = ['Khuram',23,1,2,3,4];
+function removeItem(index){
+    if(index != undefined || index != null){
+    remArr.splice(index,1);
+    }
+    return remArr;
+}
+remArr = removeItem()
+console.log(removeItem(0));
+console.log(removeItem(2));
+
+
+
+
+
+//====================          10.
+//Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+
+function sumOfNumbers(num){
+    let i = 0,
+    sum = 0;
+    while(i <= num){
+        sum += i;
+        i++;
+    }
+    return sum;
+}
+console.log(sumOfNumbers(10));
+
+
+
+
+//===================           11.
+function sumOfOdds(num){
+    let i = 0,
+    sum = 0;
+    let evenNum = [];
+    while(i <= num){
+        if(i % 2 !== 0){
+            evenNum.push(i);
+            sum += i;
+        }
+    i++;
+    }
+    return sum + "-" + evenNum;
+}
+console.log(sumOfOdds(5));
+
+
+
+
+
+//================              12.
+//it is almost same as above.
+
+
+
+
+
+//===============               13.
+//Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+function evensAndOdds(posIntNum){
+    let numOfEvens = 0,
+        numOfOdds = 0,
+        i = 0,
+        count = 0;
+        while(i <= posIntNum){
+            if(i % 2 == 0){
+                numOfEvens += 1;
+            }
+            else{
+                numOfOdds += 1;
+            }
+            i ++;
+        }
+        count = 'Nomber of evens = ' + numOfEvens + '\nNumber of odds = ' + numOfOdds;
+        return count;
+}
+console.log(evensAndOdds(100));
+
+
+
+
+
+//==============        14
+//Write a function which takes any number of arguments and return the sum of the arguments.
+
+function regSum(){
+    let sum = 0;
+    for (const arg of arguments) {
+        sum += arg;
+    }
+    return sum;
+}
+console.log(regSum(1,2,3,4,5,6));
+
+
+//or in arrow function we will write above code as follows:
+
+const arrowSum = (...num) => {
+    let sum = 0;
+    for (const n of num) {
+        sum += n;
+    }
+    return sum;
+}
+console.log(arrowSum(1,2,3,4,5,6));
+
+
+
+
+//====================          15.
+function randomUserIpGenerator(){
+    let ipAddress =  Math.floor(Math.random() * 256) + '.' + Math.floor(Math.random() * 256) + '.' + Math.floor(Math.random() * 256) + '.' + Math.floor(Math.random() * 256);
+    return ipAddress;
+}
+console.log('IP-Address: ',randomUserIpGenerator())
+
+
+
+
+//====================          16.
+//it is almost same as above.
+
+
+
+
+
+//==================        17.
+//Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+
+const hexChar = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+let index = hexChar.length - 1;
+
+function hexNumGenerator(){
+    //generate random number between 0,15 as an index.
+}
+console.log(hexNumGenerator());
