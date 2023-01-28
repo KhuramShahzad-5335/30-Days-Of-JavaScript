@@ -266,10 +266,22 @@ console.log('IP-Address: ',randomUserIpGenerator())
 //==================        17.
 //Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 
-const hexChar = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
-let index = hexChar.length - 1;
-
-function hexNumGenerator(){
-    //generate random number between 0,15 as an index.
+let hexChar = '0123456789abcdef';
+const randomIndex  = () => {
+    let ind = Math.floor(Math.random() * 16);
+    return ind; 
+    
 }
-console.log(hexNumGenerator());
+
+function hexGenerator(){
+    let hexVal = '#' + hexChar.charAt(randomIndex()) + hexChar.charAt(randomIndex()) + hexChar.charAt(randomIndex()) + hexChar.charAt(randomIndex()) + hexChar.charAt(randomIndex())+ hexChar.charAt(randomIndex());;
+    return hexVal;
+}
+
+console.log(hexGenerator())
+
+
+
+
+//===================          18.
+//this is almost same as above.
