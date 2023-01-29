@@ -356,3 +356,61 @@ const areSame = (arr) =>{
 console.log(areSame([1,1,2]))
 
 
+
+
+//===============           18.
+//JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+const isValidVariable = (str) => {
+    let isValid = true;
+    
+    for(let i = 0; i < str.length; i ++ ){
+        if(
+            !((str[i] == '_')
+            || ( str[i] == '$')
+            || (str[i] >= '0' && str[i] <= '9') 
+            || (str[i] >= 'a' && str[i] <= 'z') 
+            || (str[i] >= 'A' && str[i] <= 'Z')) 
+        ){
+            isValid = false;
+        }
+    }
+
+    if(isValid){
+        return `\'${str}\' is a valid varible name.`
+    }
+
+    else{
+        return `\'${str}\' is not a valid varible name.`
+    }
+}
+console.log(isValidVariable('1n$umber_Khuram'));
+
+
+
+
+//=================         19.
+//Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+
+// sevenRandomNumbers()
+// [(1, 4, 5, 7, 9, 8, 0)]
+
+
+const arrOfUniqueRandomNumbers = () => {
+    let arr = [];
+
+    while(arr.length < 7){
+        //generate random umbers between 0-9
+        let n = Math.floor(Math.random() * 10);
+        
+        // check that random num is unique from other elements.
+        if(arr.indexOf(n) === -1){
+            arr.push(n)
+        }
+    }
+    return arr;
+}
+
+console.log(arrOfUniqueRandomNumbers());
+
+
+
