@@ -212,3 +212,84 @@ function signIn(username,password){
     }
 }
 console.log(signIn('Alex','123123'));
+
+
+
+
+
+
+//===================           3
+//The products array has three elements and each of them has six properties. a. Create a function called rateProduct which rates the product b. Create a function called averageRating which calculate the average rating of a product.
+
+function rateProduct(){
+    let rate = 5;
+
+    let newRating = {};
+
+    // userId will be genrated, after knowing which user is signedIn
+    for (const product of products) {
+
+        // check for th especific product to rate.
+        if(product.name == 'Laptop'){
+            
+            // to rate this project, create an object and push that to the ratings array.
+            newRating['userId'] = 'CurrentUsersId';
+            newRating['rate'] = 3;
+            // now push this rating object to ratings array
+            product.ratings.unshift(newRating);
+            console.log(product)
+        }
+    }
+    return products
+}
+console.log(rateProduct());
+
+
+
+
+function averageRating(){
+    //calculate average rating of a specific product
+    let specificProductId = 'eedfcf';
+    let SpecicifProductRatings = [];
+    let sum = 0;
+    let avg;
+
+    //check for the specific product.
+    for (const product of products) {
+        if(product._id === specificProductId){
+            sum = product.ratings[0].rate;
+            sum += product.ratings[1].rate;
+            avg = sum/2
+        }
+    }
+    return avg;
+}
+
+console.log(averageRating());
+
+
+
+
+
+//===========           4.
+//Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
+
+function likeProduct(){
+    
+    let userID = 'aegfal'
+    //loop through th e object to get the product to like it.
+    for (const product of products) {
+        if(product._id === 'eedfcf'){
+            if(product.likes.length === 0){
+                product.likes.push(userID);
+            }
+            else{
+                return 'Already liked...'
+            }
+        }
+    }
+    return products;
+}
+console.log(likeProduct());
+
+
