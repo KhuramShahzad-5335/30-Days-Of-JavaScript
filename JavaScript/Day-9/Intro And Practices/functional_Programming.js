@@ -179,4 +179,24 @@ const countries2 = [
 
 
   //=============           4.  .REDUCE()               ===========
-  //
+  // reduce takes back an callback function, the callback function takes accumuator, current, and optimal initial value as the parameter and reduce a single value. It is a good practice to add optimal initial value for the accumulator, which is bcz the accumulator will take the first value of the array if the array is empty then it will return an error =, so try to use th eintitial value.
+
+/**
+ * syntax:
+ *  arr.reduce(function(acc, cur){
+ *      // some operations goes here, before it returns the value.
+ * }, initialvalue)
+ */
+
+
+//EXP: 1
+// to return the sum of elements of the arr.
+const num = [1,2,3,4,5];
+const sumR = num.reduce(function(acc,cur){
+    return acc + cur;
+},0)
+
+console.log(sumR);
+
+
+
