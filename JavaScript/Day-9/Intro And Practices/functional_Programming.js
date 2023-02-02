@@ -199,4 +199,181 @@ const sumR = num.reduce(function(acc,cur){
 console.log(sumR);
 
 
+//==========            .EVERY()            =========
+// every(), checks if all the elements of th earray are same in one aspect and return if the value is true.
 
+let isTrue = [true,true,true];
+const areSame = isTrue.every(function(value){
+    return value === true;
+})
+
+console.log(areSame);
+
+
+
+
+
+//============          Find()      =================
+// checks all the elements and returns the element which satisfies the condition.
+
+
+//EXP:  1
+
+let findVal = [0,1,'23',23,'findMe'];
+const findMe = findVal.find((value) => {
+    return value == 23;
+});
+
+console.log(findMe);
+
+
+//EXP: 2
+// return element with highest score.
+const scores2 = [
+    { name: 'Asabeneh', score: 95 },
+    { name: 'Mathias', score: 80 },
+    { name: 'Elias', score: 50 },
+    { name: 'Martha', score: 85 },
+    { name: 'John', score: 100 },
+  ]
+
+  const findUser = scores.find((val) => {
+    return val.score < 80;
+  });
+  console.log(findUser);
+
+
+
+
+//=============         .FINDiNDEX()        ============
+// Returns the first index of the first element which satisfies the condition.
+
+const findIndexArr = [1,2,3,4,5,6,7,8,9];
+
+const findMyIndex = findIndexArr.findIndex((val)=>{
+    return val === 8;
+});
+
+console.log(findMyIndex);
+
+
+
+
+
+//============          .SOME()             ============
+//checks if some of the elements of the array are same in some aspect, and returns a boolean.
+
+let sameElSame = ['khuram',true,'ali','babloo','guldasta'];
+
+const areTheseSame = sameElSame.some((val) => {
+    return typeof(val) === 'boolean';
+});
+console.log(areTheseSame);
+
+
+
+
+
+//===========              .sort()           ============
+//sort sorts the array in the ascending or descending ordr. By default this method sorts arrays as the array as strings. It works well for the strings but it is problematic for numbers. IF a numbers is sorted as a string it results in wrong value. It modifies the original array so alway make sure to copy the original array.
+
+const sortProductsArr1 = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot'];
+const copyProductsArr1 = sortProductsArr;
+
+console.log(copyProductsArr.sort());
+
+
+
+
+
+
+// sorting string values.
+const sortProductsArr = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot'];
+const copyProductsArr = sortProductsArr;
+
+console.log(copyProductsArr.sort());
+
+
+
+//sorting the numeric values
+const sortNumArr = [9.81, 3.14, 100, 37];
+
+console.log(sortNumArr.sort()); // as you can see the number 100 came first, lets modify the method a bit.
+
+// to sort in ascending order.
+sortNumArr.sort(function(a,b){
+    return a - b;
+});
+// as the above method mutates the array, so thats why we print it this way.
+console.log(sortNumArr);
+
+// to print this in descending order.
+sortNumArr.sort((a,b) => {
+    return b - a;
+});
+console.log(sortNumArr);
+
+
+
+
+
+
+
+// Sorting the object arrays.
+// when ever we sort object in array, we use objectArr.key to compare the values.
+
+// EXP: 1 as an syntaxx
+let objectArr = [];
+
+objectArr.sort(
+    function(a,b){
+        if(a.key < b.key) {
+            return -1;
+        }
+        if(a.key > b.key){
+            return 1;
+        }
+        return 0;
+    }
+)
+
+//or
+
+objectArr.sort(
+    function(a,b){
+        if(a['key'] < b['key']) {
+            return -1;
+        }
+        if(a['key'] > b['key']){
+            return 1;
+        }
+        return 0;
+    }
+);
+
+
+
+
+const usersObj = [
+    { name: 'Asabeneh', age: 150 },
+    { name: 'Brook', age: 50 },
+    { name: 'Eyob', age: 100 },
+    { name: 'Elias', age: 22 },
+  ]
+
+  //sort the users object w.r.t age of the properties
+
+  // so for sorting w,r,t numbers we have to use ab,
+  usersObj.sort(
+    function(a, b){
+        // it is necessary for first value to be greater then the second value common sense.
+        if(a.age > b.age){
+            return 1;
+        }
+        
+        if(a.age < b.age){
+            return -1
+        }
+    }
+  );
+  console.log(usersObj);
