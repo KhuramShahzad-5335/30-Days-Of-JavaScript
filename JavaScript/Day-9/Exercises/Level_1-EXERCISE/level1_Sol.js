@@ -69,3 +69,37 @@ console.log(cube(callback(2),2));
 
 
 
+//============              3               ===================
+//Use forEach to console.log each country in the countries array.
+
+const countries3 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+countries3.forEach((Element) => {
+    return console.log(Element);
+});
+
+
+
+
+
+//============              4.              ==================
+//Use forEach to console.log each name in the names array.
+
+const names3 = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+
+names3.forEach((Element) => {
+    return console.log(Element);
+});
+
+
+
+
+
+//===========               5.              ==================
+//  Use forEach to console.log each number in the numbers array.
+
+const numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+numbers3.forEach((num) => {
+    console.log(num);
+});
