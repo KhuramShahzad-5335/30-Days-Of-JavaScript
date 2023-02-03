@@ -273,3 +273,72 @@ const products15 = [
 
 
  
+
+//=================             16              ==================
+//Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+
+const mixedTypeArr = [0, 1, 2, 'String', true, { type : 'boolean'}, []];
+
+function getStringLists(arr){
+    const stringItems = arr.filter((items) => typeof items === 'string');
+    return stringItems;
+}
+
+console.log(getStringLists(mixedTypeArr));
+
+//  or
+
+const getStringListsAlternative =  (arr) => {
+    const stringItems = arr.filter((items) => typeof items === 'string');
+    return stringItems;
+}
+
+console.log(getStringListsAlternative(mixedTypeArr));
+
+
+
+
+//================          17          =======================
+//Use reduce to sum all the numbers in the numbers array.
+
+const numbers17 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// as the reduce method returns a single value of after the operation so,
+
+const sum17 = numbers17.reduce((acc, curr) => {
+    
+    // here acc acts as the temp var, which stores the values computed like sum, and curr, contains the current item which is next element of arr, previous element is already computed so it stores next element
+
+    return acc + curr
+
+},0);
+
+console.log(sum17);
+
+
+
+
+//================          18              
+// /Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+
+const countries18 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const sentence = countries18.reduce(
+    function(accumulator, country, index){
+        // now the logic is we have to check if the index, of the country is last and return accordingly.
+
+        if(index === countries18.length - 1){
+            return `${accumulator} and ${country}`
+        }
+        else if(index === countries18.length - 1){
+            return `${accumulator},${country}`
+        }
+        else {
+            return `${accumulator} ${country},`
+        }
+    }
+, "").concat(' are north europenan countries.');
+
+console.log(sentence);
+
+
