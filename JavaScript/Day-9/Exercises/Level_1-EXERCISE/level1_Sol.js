@@ -394,3 +394,72 @@ console.log(areLand);
 
 
 
+//=================             22              =================
+//Explain the difference between find and findIndex.
+
+/*
+**********FIND():
+                it takes an callback function with index, element, and arr as parameter and returns the first element which satisfies the condition.
+                
+                
+**********FindIndex():
+                It also take same parameters but returns the index of the first element which satisfies the condition.               
+*/
+
+
+
+
+
+//=================         23              ====================
+//Use find to find the first country containing only six letters in the countries array.
+
+const countries23 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const requestedCountry = countries23.find((country) => country.length === 6);
+
+console.log(requestedCountry);
+
+
+
+
+
+
+//=================              24              ===================
+//Use findIndex to find the position of the first country containing only six letters in the countries array
+
+const countries24 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const indexOfRequestedCountry = countries24.findIndex((country) => country.length === 6);
+
+console.log(indexOfRequestedCountry);
+
+
+
+
+
+//===============               25              ===================
+//Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+
+const countries25 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const indexOfNorway = countries25.findIndex((country) => country === 'Norway');
+
+console.log(indexOfNorway);
+
+
+
+
+
+//================              26              =====================
+//Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+
+const countries26 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const indexOfRussia = countries25.findIndex((country) => country === 'Russia');
+
+console.log(indexOfRussia);
+
+
+
+
+//==================================            THE END?            ============================================
