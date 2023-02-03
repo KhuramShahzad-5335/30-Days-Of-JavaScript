@@ -190,4 +190,86 @@ const products10 = [
  console.log(productWithPrice)
 
 
+
+
+
+//================             11               ====================
+//Use filter to filter out countries containing land.
+
+// by default, it returns true false, or  the array of the elements which satisfy the filter condition
+
+const countries11 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland'];
+
+countries11.filter(function(country){
+    console.log(country.includes('land'))
+});
+
+// or
+
+const landicCountries = countries11.filter((country) => country.includes('land'));
+
+console.log(landicCountries);
+
+
+
+
+
+
+//=====================             12              =================
+//Use filter to filter out countries having six character.
+
+const countries12 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland'];
+
+specificCounties = countries12.filter((country) => country.length == 6);
+
+console.log(specificCounties);
+
+
+
+
+
+//=====================             13              ==================
+//  Use filter to filter out countries containing six letters and more in the country array.
+
+const countries13 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland'];
+
+const specificCounties13 = countries13.filter((country => country.length >= 6));
+
+console.log(countries13);
+
+
+
+
+
+//====================              14              ====================
+// Use filter to filter out country start with 'E';
+
+const countries14 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland'];
+
+const countryStartWith_E = countries14.filter((country) => country[0] === 'E');
+
+console.log(countryStartWith_E);
+
+
+
+
+
+
+//====================              15              ====================
+//  Use filter to filter out only prices with values.
+
+const products15 = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+  ];
+
+  const productsWithPrice = products15.filter((Object) => typeof Object.price === 'number');
+
+  console.log(productsWithPrice)
+
+
  
