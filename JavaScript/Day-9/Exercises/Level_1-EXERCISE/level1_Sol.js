@@ -103,3 +103,91 @@ const numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 numbers3.forEach((num) => {
     console.log(num);
 });
+
+
+
+
+//===================           6           =======================
+//Use map to create a new array by changing each country to uppercase in the countries array.
+
+const countries6 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+// as this method returns new array, so lets store it in the var,
+
+const uppercaseCountries6 = countries6.map((country) => {
+    return country.toUpperCase();
+});
+
+console.log(uppercaseCountries6);
+
+
+
+
+
+//==================            7           ======================
+//Use map to create an array of countries length from countries array.
+
+// as the method returns an array, lets store that new arr in the var,
+
+const countries7 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const countriesLength7 =  countries7.map((Element) => Element.length);
+
+console.log(countriesLength7);
+
+
+
+
+
+//===================           8.             ==================
+//Use map to create a new array by changing each number to square in the numbers array
+
+const numbers8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const squareOfNums8 = numbers8.map(function(n){
+    return n ** 2;
+});
+
+console.log(squareOfNums8);
+
+
+
+
+
+//====================          9.              =================
+//Use map to change to each name to uppercase in the names array
+
+const names9 = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+
+const uppercasedNames = names9.map((name) => {
+    return name.toUpperCase();
+});
+
+console.log(uppercasedNames);
+
+
+
+
+
+//===================           10              ==================
+//Use map to map the products array to its corresponding prices.
+
+// maping product to price is like product + price so,
+
+const products10 = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+  ]
+
+ const productWithPrice = products10.map(function(obj){
+    return obj['product'] + ' = $' +obj.price;
+ });
+
+ console.log(productWithPrice)
+
+
+ 
