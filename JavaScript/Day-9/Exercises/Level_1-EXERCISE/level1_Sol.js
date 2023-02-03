@@ -342,3 +342,55 @@ const sentence = countries18.reduce(
 console.log(sentence);
 
 
+
+
+
+
+//=============             19               =====================
+//Explain the difference between some and every
+
+/* 
+...............SOME(): 
+it takes an callback element with index,element and arr as parameter, and returns boolean if some of the elements are same in one aspect.
+*/
+
+
+
+/*
+..............EVERY(): 
+    This method also takes an callback function with same as above parameters and returns true if all the elements are same in one aspect/ satisfy the condition. 
+*/
+
+
+
+
+
+
+//===================               20                  ====================
+//Use some to check if some names' length greater than seven in names array
+
+const names20 = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+
+const isgreaterLength = names20.some(
+    function(name){
+        return name.length > 7;
+    }
+);
+
+console.log(isgreaterLength);
+
+
+
+
+
+//=============             21              ===============
+//Use every to check if all the countries contain the word land.
+
+const countries21 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand'];
+
+const areLand = countries21.every((country) => country.includes('land'));
+
+console.log(areLand);
+
+
+
