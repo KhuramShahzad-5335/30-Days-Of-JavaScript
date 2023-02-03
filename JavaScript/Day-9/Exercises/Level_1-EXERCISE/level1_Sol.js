@@ -32,3 +32,40 @@
 
 
 //............Reduce(): It takes an callback function, with accumulator and current element, and optimal initial value and returns a value.
+
+
+
+
+
+
+
+
+////==========================            2.
+//Define a callback function before you use it in forEach, map, filter or reduce.
+
+//....... CALLBACK(): a callback function is an function which is passed to an function as the parameter, to perform specific task
+
+/**
+ *  function callback(){
+ *      // perform the action.
+ * }
+ * 
+ * function otherFunction(callback){
+ *  return
+ * }
+ * 
+ */
+
+//EXP:1
+function callback(n){
+    return n ** 2
+}
+
+function cube(callback,n){
+    return callback * 2;
+}
+console.log(cube(callback(2),2));
+
+
+
+
