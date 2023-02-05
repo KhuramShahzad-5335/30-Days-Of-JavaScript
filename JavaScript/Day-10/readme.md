@@ -7,7 +7,7 @@
     <h2>
     DAY-9 
     <br>
-     HIGHER ORDER FUNCTIONS
+     SETS AND MAPS
      </h2>
    <p>--------------------------------</p>
 </div>
