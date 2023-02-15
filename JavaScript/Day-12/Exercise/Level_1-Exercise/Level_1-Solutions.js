@@ -73,6 +73,3 @@ console.log(isValidVariable('firstname'));
 console.log(isValidVariable('first_name'));
 console.log(isValidVariable('first-name')); 
 console.log(isValidVariable('1firstname')); 
-
-
-
