@@ -1,5 +1,4 @@
 <div align="center">
-<div align="center">
     <h1> 30 Days Of JavaScript  </h1> 
     <sub>Author:
         <p>   Rao Khuram Shahzad   </p>
