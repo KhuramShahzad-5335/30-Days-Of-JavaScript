@@ -275,7 +275,7 @@ console.log(employee2.getPersonInfo());
             let fullTime = dateMonthYear + ' ' + time
             return fullTime
           }
-}
+}-620
 console.log(StaticMethods.getFavSkill());
 console.log(StaticMethods.showDateTime())
 
