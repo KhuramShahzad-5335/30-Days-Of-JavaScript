@@ -114,7 +114,7 @@ console.groupEnd('Get Items Group!');
 
 //========== > CLEARING THE LOCALSTORAGE : -    < ==============
 
-//localStorage.clear();  // UNCOMMENT THIS TO SEE THE DISASTER :()
+localStorage.clear();  // UNCOMMENT THIS TO SEE THE DISASTER :()
 
 
 
