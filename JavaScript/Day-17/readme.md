@@ -5,9 +5,9 @@
     </sub>
     <br>
     <h2>
-    DAY-15 
+    DAY-17 
     <br>
-    CLASSES
+    WEB STORAGE
      </h2>
    <p>--------------------------------</p>
 </div>
