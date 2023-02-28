@@ -58,3 +58,24 @@ const callback = (err, res) => {
 }
 
 promiseME1(callback);
+
+
+
+// now lets repeat above example and return the result
+
+const doSomethingBRo = callback2 => {
+    const skills = ['HTML', 'CSS', 'JS'];
+    setTimeout(() => {
+        callback2(false, skills);
+    }, 2000)
+}
+
+
+// define the callback function here.
+
+const callback2 = (err, res) => {
+    if(err) console.log(err);
+    else console.log(res);
+}
+
+doSomethingBRo(callback2);
