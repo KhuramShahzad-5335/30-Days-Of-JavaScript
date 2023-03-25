@@ -1,0 +1,34 @@
+// 1.  Create a closure which has three inner functions
+
+function outerFunction(){
+    let number = 5;
+
+    function addOne(){
+        number ++;
+        return number;
+    }
+
+    function addTwo(){
+        number = number + 2;
+        return number;
+    }
+
+    function addThree(){
+        number = number + 3;
+        return number;
+    }
+
+    return {
+        plusOne : addOne(),
+        plusTwo : addTwo(),
+        plusThree : addThree(),
+    }
+}
+
+const plusOne = outerFunction();
+const plusTwo = outerFunction();
+const plusThree = outerFunction();
+
+console.log(plusOne.plusOne);
+console.log(plusTwo.plusTwo);
+console.log(plusThree.plusThree);
